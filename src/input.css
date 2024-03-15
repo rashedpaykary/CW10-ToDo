@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .dh-style {
+    @apply border-[1px] border-[solid] border-[#d0c8c5] px-[15px] py-[10px]  break-all text-center;
+  }
+
+  .put-style {
+    @apply px-[15px] py-[5px] border-[1px] border-[solid] border-[#cfcbcb] rounded-[5px] outline-none;
+  }
+}
