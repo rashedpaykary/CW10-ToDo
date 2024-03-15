@@ -13,5 +13,62 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body></body>
+  <body>
+    <!-- <div class="root"> -->
+    <div
+      id="bg-modal"
+      class="bg-modal w-full h-full bg-[#d3d1d185] fixed z-10 hidden"
+    >
+      <!-- EyeModal -->
+      <div
+        id="eye-modal"
+        class="modal-body w-1/3 bg-slate-50 p-10 rounded-md relative z-10 m-auto top-10 hidden"
+      >
+        <button id="close-eyemodal" class="absolute top-5 right-5">
+          <i class="fa-solid fa-xmark fa-xl"></i>
+        </button>
+        <div class="modal-info">
+          <ol class="p-[10px] flex flex-col gap-[30px] list-decimal">
+            <li>TaskName</li>
+            <li>Oritiy</li>
+            <li>Status</li>
+            <li>Deadline</li>
+            <li>Discripton</li>
+          </ol>
+        </div>
+      </div>
+      <!-- PlusModal -->
+      <div
+        id="modal-content"
+        class="modal-content w-1/3 bg-slate-50 p-10 rounded-md relative z-10 m-auto top-10 hidden"
+      >
+        <h1 class="text-[30px] font-bold mb-[10px]">My Todo</h1>
+        <button id="close-todo" class="absolute top-5 right-5">
+          <i class="fa-regular fa-circle-xmark fa-2xl"></i>
+        </button>
+        <section
+          class="input-box bg-[#e4e1e1] p-[20px] flex flex-col gap-[10px]"
+        >
+          <label class="block font-bold" for="Task">Task Name :</label>
+          <input class="put-style" id="Task" type="text" />
+          <label class="block font-bold" for="Priority">Priority :</label>
+          <input class="put-style" id="Priority" type="text" />
+          <label class="block font-bold" for="Status">Status :</label>
+          <input class="put-style" id="Status" type="text" />
+          <label class="block font-bold" for="Deadline">Deadline : </label>
+          <input class="put-style" id="Deadline" type="date" />
+          <label class="block font-bold" for="Discription">Discription :</label>
+          <input class="put-style" id="Discription" type="text" />
+        </section>
+
+        <button
+          id="sub-btn"
+          class="bg-[#32a3ef] px-[20px] py-[7px] rounded-[5px] mt-[20px] hover:bg-sky-600 hover:text-white"
+        >
+          Submit
+        </button>
+      </div>
+    </div>
+    <!-- </div> -->
+  </body>
 </html>
