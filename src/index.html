@@ -70,5 +70,93 @@
       </div>
     </div>
     <!-- </div> -->
+
+    <div class="table w-[70%] m-auto">
+      <div
+        class="table-header bg-[#6200ea] flex w-full justify-between items-center p-8"
+      >
+        <div class="left-head flex items-center gap-3">
+          <span
+            ><i class="fa-solid fa-bars fa-2xl" style="color: #ffffff"></i
+          ></span>
+          <h2 class="text-white text-3xl">My ToDo Task</h2>
+        </div>
+
+        <div class="right-head flex items-center gap-3">
+          <div class="input-box relative">
+            <input
+              class="bg-[#7926ed] px-[30px] py-[4px] focus:outline-[none] text-white"
+              type="text"
+              name=""
+              id=""
+              placeholder="Search"
+            />
+            <span class="absolute left-[5px] top-[5px]"
+              ><i
+                class="fa-solid fa-magnifying-glass"
+                style="color: #fafafa"
+              ></i
+            ></span>
+          </div>
+          <span
+            ><i class="fa-solid fa-filter fa-xl" style="color: #ffffff"></i
+          ></span>
+          <span id="plus" class="hover:cursor-pointer"
+            ><i class="fa-solid fa-square-plus fa-xl" style="color: #ffffff"></i
+          ></span>
+        </div>
+      </div>
+
+      <div class="table-section h-[700px] overflow-auto">
+        <table class="w-full table-fixed border-separate">
+          <thead class="bg-[#d5d0d0]">
+            <tr>
+              <th class="dh-style text-start sticky top-0 bg-[#aeabab]">
+                Task Name
+              </th>
+              <th class="dh-style sticky top-0 bg-[#aeabab]">Priority</th>
+              <th class="dh-style sticky top-0 bg-[#aeabab]">Status</th>
+              <th class="dh-style sticky top-0 bg-[#aeabab]">Deadline</th>
+              <th class="dh-style sticky top-0 bg-[#aeabab]">Action</th>
+            </tr>
+          </thead>
+
+          <tbody id="tbody">
+            <tr>
+              <td class="dh-style text-start"><span>Alpha</span></td>
+              <td class="dh-style">
+                <span
+                  class="bg-[#ed9f2b] px-[10px] py-[5px] rounded-[30px] text-[16px] font-bold"
+                  >Low</span
+                >
+              </td>
+              <td class="dh-style">
+                <span
+                  class="bg-[#ed2b2b] px-[10px] py-[5px] rounded-[30px] text-[16px] font-bold text-white"
+                  >Todo</span
+                >
+              </td>
+              <td class="dh-style">
+                <span
+                  class="border-[1px] border-[solid] border-[#516eff] p-[5px] rounded-[20px]"
+                  >1402/12/11</span
+                >
+              </td>
+              <td class="dh-style flex gap-5 justify-center items-center">
+                <button class="bg-[#f52727] px-[10px] py-px rounded-[7px]">
+                  <i class="fa-solid fa-trash" style="color: #ffffff"></i>
+                </button>
+                <button class="bg-[#1c82ff] px-[10px] py-px rounded-[7px]">
+                  <i class="fa-solid fa-pen" style="color: #ffffff"></i>
+                </button>
+                <button class="bg-[#9c9c9c] px-[10px] py-px rounded-[7px]">
+                  <i class="fa-solid fa-eye" style="color: #ffffff"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </body>
 </html>
